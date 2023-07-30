@@ -23,7 +23,8 @@
     "baseUrl": "./src",
     "paths": {
       "@/components/*": ["./components/*"],
-      "@/interface/*": ["./interface/*"]
+      "@/interface/*": ["./interface/*"],
+      "@/data/*": ["./data/*"]
     }
   },
 

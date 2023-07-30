@@ -37,7 +37,6 @@ const Header = (props: any) => {
           </List>
 
           <ButtonPrimary variant="outlined" value="LOGIN"></ButtonPrimary>
-          
         </Container>
       </Paper>
     </>

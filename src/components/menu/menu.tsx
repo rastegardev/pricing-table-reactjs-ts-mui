@@ -1,6 +1,7 @@
 import { ListItem } from "@mui/material";
+import MenuItemProps from "./Menu.interface.tsx";
 
-const navItem = [
+const navItem: MenuItemProps | MenuItemProps[] = [
   { id: 1, name: "FEATURES" },
   { id: 2, name: "ENTERPRISE" },
   { id: 3, name: "SUPPORT" },
@@ -9,11 +10,9 @@ const navItem = [
 const MenuItem = () => {
   return (
     <>
-      {navItem.map((value, index) => {
-        <ListItem key={`item-${index}`}>{value.name}</ListItem>;
-        console.log(index);
-        console.log(value);
-      })}
+      {navItem.map((value, index) => (
+        <ListItem key={`item-${index}`}>{value.name}</ListItem>
+      ))}
     </>
   );
 };

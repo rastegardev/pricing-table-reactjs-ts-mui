@@ -1,5 +1,5 @@
 import Button from "@mui/material/Button";
-import { ButtonProps } from "@/interface/index";
+import ButtonProps from "./Button.interface";
 
 const ButtonPrimary: React.FC<ButtonProps> = ({ variant, value }) => {
   return (
