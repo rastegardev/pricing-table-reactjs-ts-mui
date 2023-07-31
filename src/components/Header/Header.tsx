@@ -10,7 +10,7 @@ const Header = (props: any) => {
         sx={{
           width: "100%",
           display: "flex",
-          minHeight: "85px",
+          minHeight: "45px",
           bgcolor: "#F5F5F5",
           alignItems: "center",
           justifyContent: "space-between",
@@ -18,19 +18,25 @@ const Header = (props: any) => {
       >
         <Container
           sx={{
-            p: 1,
-            width: "100%",
+            p: { xs: 2, sm: 1 },
             display: "flex",
             alignItems: "center",
             justifyContent: "space-between",
           }}
         >
-          <Typography>{props.title}</Typography>
+          <Typography
+            sx={{
+              fontWeight: "700",
+            }}
+          >
+            {props.title}
+          </Typography>
           <List
             sx={{
-              display: "flex",
               alignItems: "center",
               justifyContent: "space-between",
+              display: { xs: "none", sm: "flex" },
+              cursor: "pointer",
             }}
           >
             <MenuItem />
